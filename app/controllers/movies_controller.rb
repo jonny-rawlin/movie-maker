@@ -18,6 +18,7 @@ class MoviesController < ApplicationController
 
   # GET: /movies/5
   get "/movies/:id" do
+    @movie = Movie.find(params[:id])
     erb :"/movies/show.html"
   end
 

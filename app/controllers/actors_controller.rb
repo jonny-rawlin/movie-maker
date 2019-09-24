@@ -18,6 +18,7 @@ class ActorsController < ApplicationController
 
   # GET: /actors/5
   get "/actors/:id" do
+    @actor = Actor.find(params[:id])
     erb :"/actors/show.html"
   end
 

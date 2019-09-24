@@ -18,6 +18,7 @@ class DirectorsController < ApplicationController
 
   # GET: /directors/5
   get "/directors/:id" do
+    @director = Director.find(params[:id])
     erb :"/directors/show.html"
   end
 
