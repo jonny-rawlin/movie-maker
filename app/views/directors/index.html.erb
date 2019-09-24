@@ -1,0 +1,10 @@
+<h1>Directors</h1>
+
+<ul>
+  <% @directors.each do |d| %>
+    <li><strong>Name:</strong> <%= d.name %></li>
+    <li><strong>Age:</strong> <%= d.age %></li>
+    <li><strong>Nationality:</strong> <%= d.nationality %></li>
+    <br>
+  <% end %>
+</ul>

@@ -1,0 +1,11 @@
+<h1>Movies</h1>
+
+<ul>
+  <% @movies.each do |m| %>
+    <li><strong>Name:</strong> <%= m.name %></li>
+    <li><strong>Genre:</strong> <%= m.genre %></li>
+    <li><strong>Release Date:</strong> <%= m.release_date %></li>
+    <li><strong>Director:</strong> <%= m.director.name %></li>
+    <br>
+  <% end %>
+</ul>
