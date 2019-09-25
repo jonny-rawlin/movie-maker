@@ -13,6 +13,7 @@ class MoviesController < ApplicationController
 
   # POST: /movies
   post "/movies" do
+    movie = Movie.new(name: params[:movie][:name], genre: params[:movie][:genre], release_date: params[:movie][:release_date])
     redirect "/movies"
   end
 

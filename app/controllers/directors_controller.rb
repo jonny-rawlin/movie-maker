@@ -13,6 +13,7 @@ class DirectorsController < ApplicationController
 
   # POST: /directors
   post "/directors" do
+    director = Director.new(name: params[:director][:name], age: params[:director][:age], nationality: params[:director][:nationality])
     redirect "/directors"
   end
 

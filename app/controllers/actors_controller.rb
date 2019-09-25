@@ -13,6 +13,7 @@ class ActorsController < ApplicationController
 
   # POST: /actors
   post "/actors" do
+    actor = Actor.new(name: params[:actor][:name], age: params[:actor][:age], nationality: params[:actor][:nationality])
     redirect "/actors"
   end
 
