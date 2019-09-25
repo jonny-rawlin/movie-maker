@@ -1,1 +1,18 @@
-<h1>Insert the form to create a new instance of your model.</h1>
+<h1>Add your new movie here!</h1>
+
+<br>
+<form action="/movies" method="POST">
+  <label for="movie_name"><strong>Name</strong></label>
+  <input type="text" id="movie_name" name="movie[name]"></input>
+  <br>
+  <br>
+  <label for="movie_genre"><strong>Genre</strong></label>
+  <input type="text" id="movie_genre" name="movie[genre]"></input>
+  <br>
+  <br>
+  <label for="movie_release_date"><strong>Release Date</strong></label>
+  <input type="text" id="movie_release_date" name="movie[release_date]"></input>
+  <br>
+  <br>
+  <input type="submit">
+</form>

@@ -1,1 +1,18 @@
-<h1>Insert the form to create a new instance of your model.</h1>
+<h1>Add your new actor here!</h1>
+
+<br>
+<form action="/actors" method="POST">
+  <label for="actor_name"><strong>Name</strong></label>
+  <input type="text" id="actor_name" name="actor[name]"></input>
+  <br>
+  <br>
+  <label for="actor_age"><strong>Age</strong></label>
+  <input type="text" id="actor_age" name="actor[age]"></input>
+  <br>
+  <br>
+  <label for="actor_nationality"><strong>Nationality</strong></label>
+  <input type="text" id="actor_nationality" name="actor[nationality]"></input>
+  <br>
+  <br>
+  <input type="submit">
+</form>
