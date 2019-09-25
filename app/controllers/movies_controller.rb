@@ -13,13 +13,13 @@ class MoviesController < ApplicationController
 
   # POST: /movies
   post "/movies" do
-    movie = Movie.new(name: params[:movie][:name], genre: params[:movie][:genre], release_date: params[:movie][:release_date])
-    params[:movie][:director].each do |director|
+    @movie = Movie.new(name: params[:movies][:name], genre: params[:movies][:genre], release_date: params[:movies][:release_date])
+    params[:movies][:director].each do |director|
       director = Director.new(director)
       director.movies = movie
       director.save
     end
-    params[:movie][:actors].each do |actor|
+    params[:movies][:actors].each do |actor|
       actor = Actor.new(actor)
       actor.movies = movie
       actor.save
